@@ -82,11 +82,14 @@ CLASS NoteCommand IMPLEMENTS INoteCommand
     END
 END
 
-The Command pattern was implemented through the INoteCommand interface and the NoteCommand class. Each command object encapsulates the action of playing a sound, storing its FMOD event and position, and then calling Execute() to play it through the AudioManager. It was implemented this way to separate the trigger (player pressing E) from the action (playing the note). This benefits the interactive experience by making interactions more flexible, future commands like lighting effects or note sequences could easily be added and executed the same way, improving the extensibility and structure of the gameplay logic.
+The Command pattern was implemented through the INoteCommand interface and the NoteCommand class. Each command object encapsulates the action of playing a sound, storing its FMOD event and position, and then calling Execute() to play it through the AudioManager. It was implemented this way to separate the trigger (player pressing E) from the action (playing the note). This benefits the interactive experience by making interactions more flexible; future commands like lighting effects or note sequences could easily be added and executed the same way, improving the extensibility and structure of the gameplay logic.
 
 **[Plugin]**
 
-I used FMOD for plugins/DLL. FMOD is a great plugin for audio-related things in game design. FMOD separates sound design from game logic, making everything clean and clearer to use. It also pairs well with the design patterns required for the assignment.
+I used FMOD for plugins/DLL. FMOD is a great plugin for audio-related things in game design. FMOD separates sound design from game logic, making everything clean and clearer to use. It also pairs well with the design patterns required for the assignment. Plus, it has versatile and easy-to-use 3D and 2D audio editing tools that can be instantly applied to the game with only a few lines of code.
 
 **[Video]**
 
+The video file was too big, so I uploaded it to YouTube.
+
+https://youtu.be/EDuvdVABV_U
