@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 144994231}
   - component: {fileID: 144994230}
   - component: {fileID: 144994229}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 410987830}
   - component: {fileID: 410987829}
   - component: {fileID: 410987828}
+  - component: {fileID: 410987832}
   m_Layer: 0
   m_Name: Pillar (2)
   m_TagString: Untagged
@@ -380,6 +381,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410987832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410987827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06eba297da28b6c44a1c88b6f13a5444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pillarIndex: 3
+  noteFactory: {fileID: 699483553}
+  player: {fileID: 144994232}
+  interactDistance: 3
+  interactKey: 101
 --- !u!1 &428101140
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428101141}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566164396}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: CameraPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,6 +459,78 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1399343003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &699483552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699483554}
+  - component: {fileID: 699483553}
+  m_Layer: 0
+  m_Name: NoteFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699483553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699483552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c5bbac5249ae43b032b2b97e5f198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Crystal1:
+    Guid:
+      Data1: -116432078
+      Data2: 1335680607
+      Data3: -1731184254
+      Data4: -66601500
+    Path: event:/Crystal1
+  Crystal2:
+    Guid:
+      Data1: 1192903037
+      Data2: 1084996505
+      Data3: 1670799540
+      Data4: 1423128242
+    Path: event:/Crystal2
+  Crystal3:
+    Guid:
+      Data1: 1887354759
+      Data2: 1302903649
+      Data3: 957834140
+      Data4: -619390667
+    Path: event:/Crystal3
+  Crystal4:
+    Guid:
+      Data1: -70656397
+      Data2: 1158282794
+      Data3: 1009352348
+      Data4: -1979773366
+    Path: event:/Crystal4
+--- !u!4 &699483554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699483552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.364021, y: 4.5853868, z: 4.6832123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -536,6 +626,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &749839270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749839272}
+  - component: {fileID: 749839271}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &749839271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749839270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512c07ddc86f8f9419d2c5955a02aa18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &749839272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749839270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7682672, y: 5.1877303, z: 1.8636768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920332719
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920332720}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,6 +827,7 @@ GameObject:
   - component: {fileID: 1079829298}
   - component: {fileID: 1079829297}
   - component: {fileID: 1079829296}
+  - component: {fileID: 1079829300}
   m_Layer: 0
   m_Name: Pillar (1)
   m_TagString: Untagged
@@ -786,6 +921,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079829300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079829295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06eba297da28b6c44a1c88b6f13a5444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pillarIndex: 2
+  noteFactory: {fileID: 699483553}
+  player: {fileID: 144994232}
+  interactDistance: 3
+  interactKey: 101
 --- !u!1 &1387541227
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +1055,7 @@ GameObject:
   - component: {fileID: 1399343003}
   - component: {fileID: 1399343002}
   - component: {fileID: 1399343004}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,6 +1144,7 @@ GameObject:
   - component: {fileID: 1798237538}
   - component: {fileID: 1798237537}
   - component: {fileID: 1798237536}
+  - component: {fileID: 1798237540}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -1085,6 +1238,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1798237540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798237535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06eba297da28b6c44a1c88b6f13a5444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pillarIndex: 1
+  noteFactory: {fileID: 699483553}
+  player: {fileID: 144994232}
+  interactDistance: 3
+  interactKey: 101
 --- !u!1 &1856696608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1267,7 @@ GameObject:
   - component: {fileID: 1856696611}
   - component: {fileID: 1856696610}
   - component: {fileID: 1856696609}
+  - component: {fileID: 1856696613}
   m_Layer: 0
   m_Name: Pillar (3)
   m_TagString: Untagged
@@ -1190,6 +1361,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856696613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856696608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06eba297da28b6c44a1c88b6f13a5444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pillarIndex: 4
+  noteFactory: {fileID: 699483553}
+  player: {fileID: 144994232}
+  interactDistance: 3
+  interactKey: 101
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1202,3 +1390,5 @@ SceneRoots:
   - {fileID: 1856696612}
   - {fileID: 345904817}
   - {fileID: 1399343003}
+  - {fileID: 749839272}
+  - {fileID: 699483554}

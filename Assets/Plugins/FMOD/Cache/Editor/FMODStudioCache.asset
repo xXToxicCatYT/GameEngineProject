@@ -15,11 +15,92 @@ MonoBehaviour:
   Path: E:/FMOD Studio Projects/GameDesignProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638967533943345902
+  lastModified: 638967646135359204
   FileSizes:
   - Name: Desktop
-    Value: 758
+    Value: 866
   Exists: 1
+--- !u!114 &-5102583321335861663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crystal2
+  m_EditorClassIdentifier: 
+  Path: event:/Crystal2
+  Guid:
+    Data1: 1192903037
+    Data2: 1084996505
+    Data3: 1670799540
+    Data4: 1423128242
+  Banks:
+  - {fileID: 7365801897193546139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3977687634944606594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crystal1
+  m_EditorClassIdentifier: 
+  Path: event:/Crystal1
+  Guid:
+    Data1: -116432078
+    Data2: 1335680607
+    Data3: -1731184254
+    Data4: -66601500
+  Banks:
+  - {fileID: 7365801897193546139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3625298951598492458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crystal3
+  m_EditorClassIdentifier: 
+  Path: event:/Crystal3
+  Guid:
+    Data1: 1887354759
+    Data2: 1302903649
+    Data3: 957834140
+    Data4: -619390667
+  Banks:
+  - {fileID: 7365801897193546139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,41 +117,17 @@ MonoBehaviour:
   - {fileID: -7118635217459282690}
   - {fileID: 7365801897193546139}
   EditorEvents:
-  - {fileID: 2851409170451333894}
+  - {fileID: -3977687634944606594}
+  - {fileID: 7805783892373024040}
+  - {fileID: -5102583321335861663}
+  - {fileID: -3625298951598492458}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7365801897193546139}
   StringsBanks:
   - {fileID: -7118635217459282690}
-  cacheTime: 638967533943345902
+  cacheTime: 638967646135359204
   cacheVersion: 131621
---- !u!114 &2851409170451333894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Crystals
-  m_EditorClassIdentifier: 
-  Path: event:/Crystals
-  Guid:
-    Data1: -116432078
-    Data2: 1335680607
-    Data3: -1731184254
-    Data4: -66601500
-  Banks:
-  - {fileID: 7365801897193546139}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &7365801897193546139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +143,35 @@ MonoBehaviour:
   Path: E:/FMOD Studio Projects/GameDesignProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638967533943335564
+  lastModified: 638967646135344153
   FileSizes:
   - Name: Desktop
-    Value: 171136
+    Value: 174144
   Exists: 1
+--- !u!114 &7805783892373024040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crystal4
+  m_EditorClassIdentifier: 
+  Path: event:/Crystal4
+  Guid:
+    Data1: -70656397
+    Data2: 1158282794
+    Data3: 1009352348
+    Data4: -1979773366
+  Banks:
+  - {fileID: 7365801897193546139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
